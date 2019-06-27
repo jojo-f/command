@@ -1,0 +1,21 @@
+{
+  "name": "command",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "x": "commands/index.js"
+  },
+  "scripts": {
+    "xinit": "npm link"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "handlebars": "^4.1.2",
+    "shelljs": "^0.8.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
