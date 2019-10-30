@@ -10,7 +10,7 @@ program
     .option('-l, --pull', 'pull 拉取文件，然后推送')
     .option('-m, --pushm [msg]', 'push 文件接 描述信息,使用双引号描述')
     .option("-o, --orz [msg]", "用于orz.io博客打包")
-    .option("-c, --copy [origin] [target]", "拷贝origin至target")
+    .option("-c, --copy [origin] [target]", "拷贝../temp至当前文件夹")
 
 program.on('--help', () => {
     console.log('                                                                   ')
@@ -38,6 +38,7 @@ if (program.orz) {
     shell.cp('-R', '../temp/*', './');
     shell.exec("git add .")
     shell.exec(`git commit -m '${program.orz}'`)
+    shell.exec("git checkout build-br")
 }
 if (program.copy) {
     shell.cp('-R', '../temp/*', './');
