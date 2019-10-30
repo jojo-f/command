@@ -1,7 +1,15 @@
 {
-  "name": "command",
+  "name": "@zhoulichao/command",
+  "author": "llorz-o <zhoulichao.id725361@gmail.com> (https://llorz-o.github.io)",
   "version": "1.0.0",
-  "description": "",
+  "keywords": [
+    "git",
+    "command",
+    "私有"
+  ],
+  "description": "个人向的自动化脚本库!!",
+  "access": "public",
+  "license": "ISC",
   "main": "index.js",
   "bin": {
     "x": "commands/index.js"
@@ -9,13 +17,14 @@
   "scripts": {
     "xinit": "npm link"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llorz-o/command.git"
+  },
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "handlebars": "^4.1.2",
     "shelljs": "^0.8.3"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
