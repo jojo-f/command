@@ -21,7 +21,7 @@ module.exports = (cmd,ops) => {
     }
     if(cmd === 'm'){
         shell.exec('git add *')
-        shell.exec(`git commit -m '${ ops }'`)
+        shell.exec(`git commit -m "${ ops }"`)
         shell.exec('git push')
     }
 }
