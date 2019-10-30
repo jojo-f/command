@@ -38,6 +38,7 @@ if (program.orz) {
     shell.cp('-R', '../temp/*', './');
     shell.exec("git add .")
     shell.exec(`git commit -m '${program.orz}'`)
+    shell.exec("git push")
     shell.exec("git checkout build-br")
 }
 if (program.copy) {
